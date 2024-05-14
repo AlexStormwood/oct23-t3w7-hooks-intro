@@ -36,6 +36,7 @@ function App() {
     setPokemon({name: result.name, sprite: result.sprites.front_default});
   }
 
+  // On component load, make a fetch request
   useEffect(() => {
     getPokemon();
   }, []);
